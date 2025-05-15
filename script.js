@@ -83,8 +83,8 @@ function init() {
       model = gltf
       console.log('success')
       console.log(gltf)
-      gltf.scene.scale.set(0.5, 0.5, 0.5)
-      gltf.scene.position.set(0, 0, -1)
+      gltf.scene.scale.set(0.4, 0.4, 0.4)
+      gltf.scene.position.set(0, 0.2, -1)
       group.add(gltf.scene);
       mixer = new THREE.AnimationMixer(gltf.scene)
       action = mixer.clipAction(gltf.animations[0])
